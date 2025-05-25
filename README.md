@@ -15,6 +15,7 @@ Real-time feedback and detailed evaluation reports for students.
 Working Process Explanation : [Working Process.docx](https://github.com/user-attachments/files/20432431/Working.Process.docx)
 Working Video : https://drive.google.com/file/d/1-UZ7D8iFSOAPjf7JragX9Eyc-EoSB71v/view?usp=drivesdk
 
+
 Problem Faced: Ollama AI Evaluation Issues 
 
 Context-1:
@@ -43,7 +44,7 @@ The AI now evaluates student answers more fairly, focusing on meaning rather tha
 Context-2:
 In my exam system, when a student submitted answers, the backend would send long/paragraph and fill-in-the-blank answers to the local Ollama AI model{gemma:2b} for evaluation. Sometimes, Ollama took several seconds to respond.
 Issue:
-Because of this delay, the frontend would time out or show an “evaluation failed” error before the backend received Ollama’s response. This ledto a poor user experience, as students thought their submissions had failed even when the evaluation was still processing in the background.
+Because of this delay, the frontend would time out or show an “evaluation failed” error before the backend received Ollama’s response. This led to a poor user experience, as students thought their submissions had failed even when the evaluation was still processing in the background.
 How I Diagnosed the Problem
 Error Logging:
 I checked the frontend and backend logs and noticed that the frontend was receiving timeout or error responses, even though the backend eventually got a response from Ollama.
