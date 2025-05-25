@@ -1,0 +1,150 @@
+/* EditExamPage.module.css */
+
+.editExamWrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding-bottom: 2rem;
+}
+
+.editExamHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e0e2e6;
+  z-index: 1000;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.editExamContainer {
+  max-width: 800px;
+  margin: 90px auto 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid #e0e2e6;
+  position: relative;
+  overflow: hidden;
+}
+
+.editExamTitle {
+  color: #2563eb;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.editExamForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #e0e2e6;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.95);
+  color: #1e293b;
+  font-weight: 500;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.questionBlock {
+  background: rgba(255,255,255,0.8);
+  border: 1px solid #e0e2e6;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.05);
+}
+
+.questionBlock h4 {
+  color: #2563eb;
+  margin-bottom: 1rem;
+}
+
+.questionBlock .formGroup {
+  margin-bottom: 1rem;
+}
+
+.editExamButton,
+.editExamButtonSecondary {
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.editExamButton {
+  background: linear-gradient(135deg, #2563eb, #10b981);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+}
+
+.editExamButton:hover {
+  background: linear-gradient(135deg, #1e40af, #059669);
+}
+
+.editExamButtonSecondary {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #fff;
+}
+
+.editExamButtonSecondary:hover {
+  background: linear-gradient(135deg, #b91c1c, #991b1b);
+}
+
+@media (max-width: 600px) {
+  .editExamContainer {
+    padding: 1rem;
+    margin: 80px 0.5rem 1rem 0.5rem;
+  }
+  .editExamTitle {
+    font-size: 1.3rem;
+  }
+  .questionBlock {
+    padding: 1rem;
+  }
+} 
