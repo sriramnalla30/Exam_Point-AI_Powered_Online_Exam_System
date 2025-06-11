@@ -63,6 +63,10 @@ Backend Response Handling:
 I ensured the backend sent a clear status response (success, failure, or still processing) and handled Ollama’s delays gracefully.
 I added error handling for cases where Ollama took too long or failed to respond, so the frontend could show a helpful message instead of a generic error..
 
+ Results while testing without UI
  
  ![WhatsApp Image 2025-05-24 at 10 13 07_82c95034](https://github.com/user-attachments/assets/82e4caca-4ae3-4217-b895-a557d51b5f71)
+
+ ![WhatsApp Image 2025-05-24 at 10 34 40_fd0acd0a](https://github.com/user-attachments/assets/f09e10e9-a14c-4a34-91fb-67fd03767b98)
+
 
