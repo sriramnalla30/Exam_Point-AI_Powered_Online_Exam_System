@@ -64,3 +64,5 @@ I ensured the backend sent a clear status response (success, failure, or still p
 I added error handling for cases where Ollama took too long or failed to respond, so the frontend could show a helpful message instead of a generic error..
 
  
+ ![WhatsApp Image 2025-05-24 at 10 13 07_82c95034](https://github.com/user-attachments/assets/82e4caca-4ae3-4217-b895-a557d51b5f71)
+
