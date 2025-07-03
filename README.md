@@ -2,7 +2,9 @@
 
 
 I developed a full-stack online exam platform that leverages generative AI for automated answer evaluation. The system enables teachers to create exams with multiple question types (MCQ, fill-in-the-blank, and long/paragraph answers) and provides students with a seamless test-taking experience.
-Tech Stack:
+The core focus of the project lies in flexible and accurate evaluation. For instance, for the question “How is multiple inheritance achieved in Java?”, varied responses like “It is achieved through interfaces” and “Multiple inheritance in Java is achieved using interfaces” are semantically matched and correctly marked as valid answers using a locally hosted Ollama AI model, where we send the Question, Teacher and Student answer as prompt to the Ollama AI then evaluates the Different answers correctly
+
+**Tech Stack:**
 Backend: Java, Spring Boot, Spring Security, JPA, MySQL
 Frontend: React.js
 AI Integration: Local Ollama generative AI model for semantic answer evaluation
